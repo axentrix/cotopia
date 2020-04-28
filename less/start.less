@@ -1,0 +1,96 @@
+﻿@import 'variables.less';
+@charset "utf-8";
+body {
+ font-family:   "Segoe UI",Roboto,"Helvetica Neue";
+ background:url(../images/headerright.svg) 100% 0 no-repeat;
+}
+.cotopiaone {
+    background: url(../images/headerleft.svg) 0 100% no-repeat;
+}
+.btn-primary-soft{border:solid 1px @blue; color:@blue}
+.cotopiathree {
+    background: url(../images/howitworksleft.svg) 0 0 no-repeat;
+    background-size:contain;
+
+    .lead{
+
+        font-size:1.1rem;
+        margin-bottom:4rem;
+    }
+}
+.greybg{
+
+    background:@greybg;
+}
+.gradient-y-gray {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(231, 234, 243, 0.5) 100%);
+    background-repeat: repeat-x;
+}
+
+.h1, h1 {
+    font-size: 3.5rem;
+}
+.lead {
+    font-size: 2.1rem;
+    font-weight: 400;
+}
+.btn {
+    padding: .975rem .75rem;
+}
+
+.btn-primary{
+    background:@blue;
+}
+.darkbg{
+
+    background:@darkbg;
+}
+
+.bubble {
+    height: auto;
+    min-height:200px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+    cursor: pointer;
+    border: 1px dashed #000;
+    border-radius: 10px;
+}
+
+.bubble:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 30px;
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    box-sizing: border-box;
+    transform: rotate(45deg) translate(-50%);
+    border-bottom: inherit;
+    border-right: inherit;
+    box-shadow: inherit;
+}
+
+.teamsection {
+    background: url(../images/teambg.svg) 50% 0 no-repeat;
+}
+
+.text-blue{
+    color:@blue;
+}
+
+.questions p{
+    font-size:1.5rem;
+    text-align:left;
+}
+
+footer a{
+    margin-right:4rem;
+    color:#000;
+
+    &:hover{
+        text-decoration:none;
+        color:@blue;
+    }
+}
