@@ -3,6 +3,8 @@
 body {
  font-family:   "Segoe UI",Roboto,"Helvetica Neue";
  background:url(../images/headerright.svg) 100% 0 no-repeat;
+ overflow-x:hidden;
+ width:100%;
 }
 .cotopiaone {
     background: url(../images/headerleft.svg) 0 100% no-repeat;
@@ -10,12 +12,10 @@ body {
 .btn-primary-soft{border:solid 1px @blue; color:@blue}
 .cotopiathree {
     background: url(../images/howitworksleft.svg) 0 0 no-repeat;
-    background-size:contain;
+    background-size: contain;
 
-    .lead{
-
-        font-size:1.1rem;
-        margin-bottom:4rem;
+    .lead {
+        font-size: calc(1.25625rem + .075vw);
     }
 }
 .greybg{
@@ -80,9 +80,9 @@ body {
     color:@blue;
 }
 
-.questions p{
-    font-size:1.5rem;
-    text-align:left;
+.questions p {
+    font-size: calc(1.25625rem + .075vw);
+    text-align: left;
 }
 
 footer a{
@@ -92,5 +92,49 @@ footer a{
     &:hover{
         text-decoration:none;
         color:@blue;
+    }
+
+   
+}
+
+footer {
+
+    .d-flex {
+        flex-wrap: wrap;
+    }
+}
+
+.copyright {
+   /*flex: 0 0 100%;*/
+}
+
+
+.order-md-1 {
+    -webkit-box-ordinal-group: 2;
+    order: 1;
+}
+
+    .order-md-2 {
+        -webkit-box-ordinal-group: 3;
+        order: 2;
+    }
+
+@media (max-width: 991.98px) {
+    .lead {
+    font-size:1.25rem;
+
+
+    }
+}
+
+@media (max-width: 1200px){
+.h2, h2 {
+    font-size: calc(1.25625rem + .075vw);
+}
+}
+
+@media (min-width: 768px) {
+    .copyright{
+        margin-left:auto;
     }
 }

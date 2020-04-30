@@ -408,6 +408,8 @@
 body {
   font-family: "Segoe UI", Roboto, "Helvetica Neue";
   background: url(../images/headerright.svg) 100% 0 no-repeat;
+  overflow-x: hidden;
+  width: 100%;
 }
 .cotopiaone {
   background: url(../images/headerleft.svg) 0 100% no-repeat;
@@ -421,8 +423,7 @@ body {
   background-size: contain;
 }
 .cotopiathree .lead {
-  font-size: 1.1rem;
-  margin-bottom: 4rem;
+  font-size: calc(1.33125rem);
 }
 .greybg {
   background: #f2f7f8;
@@ -479,7 +480,7 @@ h1 {
   color: #4483ef;
 }
 .questions p {
-  font-size: 1.5rem;
+  font-size: calc(1.33125rem);
   text-align: left;
 }
 footer a {
@@ -489,4 +490,34 @@ footer a {
 footer a:hover {
   text-decoration: none;
   color: #4483ef;
+}
+footer .d-flex {
+  flex-wrap: wrap;
+}
+.copyright {
+  /*flex: 0 0 100%;*/
+}
+.order-md-1 {
+  -webkit-box-ordinal-group: 2;
+  order: 1;
+}
+.order-md-2 {
+  -webkit-box-ordinal-group: 3;
+  order: 2;
+}
+@media (max-width: 991.98px) {
+  .lead {
+    font-size: 1.25rem;
+  }
+}
+@media (max-width: 1200px) {
+  .h2,
+  h2 {
+    font-size: calc(1.33125rem);
+  }
+}
+@media (min-width: 768px) {
+  .copyright {
+    margin-left: auto;
+  }
 }
