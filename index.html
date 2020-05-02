@@ -24,23 +24,66 @@
     <link href="css/start.css" rel="stylesheet">
 </head>
 
-<body>
+<body><header class="header header-box-shadow-on-scroll header-abs-top header-bg-transparent header-show-hide" id="header">
+    <div class="header-section">
 
+        <div class="container" id="logoAndNav">
+
+            <nav class="navbar navbar-expand-lg">
+
+                <a class="navbar-brand" href="index.html" aria-label="Front">
+                    <img src="images/logo.svg" alt="Cotopia" class="d-block mt-2" />
+                </a>
+                <button type="button" class="navbar-toggler btn btn-icon btn-sm rounded-circle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navBar" data-toggle="collapse" data-target="#navBar">
+                    <span class="navbar-toggler-default">
+                        <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M17.4,6.2H0.6C0.3,6.2,0,5.9,0,5.5V4.1c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,5.9,17.7,6.2,17.4,6.2z M17.4,14.1H0.6c-0.3,0-0.6-0.3-0.6-0.7V12c0-0.4,0.3-0.7,0.6-0.7h16.9c0.3,0,0.6,0.3,0.6,0.7v1.4C18,13.7,17.7,14.1,17.4,14.1z"></path>
+                        </svg>
+                    </span>
+                    <span class="navbar-toggler-toggled">
+                        <svg width="14" height="14" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                            <path fill="currentColor" d="M11.5,9.5l5-5c0.2-0.2,0.2-0.6-0.1-0.9l-1-1c-0.3-0.3-0.7-0.3-0.9-0.1l-5,5l-5-5C4.3,2.3,3.9,2.4,3.6,2.6l-1,1 C2.4,3.9,2.3,4.3,2.5,4.5l5,5l-5,5c-0.2,0.2-0.2,0.6,0.1,0.9l1,1c0.3,0.3,0.7,0.3,0.9,0.1l5-5l5,5c0.2,0.2,0.6,0.2,0.9-0.1l1-1 c0.3-0.3,0.3-0.7,0.1-0.9L11.5,9.5z"></path>
+                        </svg>
+                    </span>
+                </button>
+
+
+
+                <div id="navBar" class="collapse navbar-collapse">
+
+                    <div class="navbar-body header-abs-top-inner">
+
+                        <ul class="navbar-nav">
+
+                            <li><a href="#" class="nav-link">About</a></li>
+                            <li><a href="#" class="nav-link">Case Studies</a></li>
+                            <li><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+            </nav>
+
+        </div>
+    </div>
+</header>
     <section class="cotopiaone pt-4 pt-md-11">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-12 col-md-5 col-lg-6 order-md-2">
 
                     <!-- Image -->
-                    <img src="images/cotopiahero.svg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..." data-aos="fade-up" data-aos-delay="100">
+                    <img src="images/cotopiahero.svg" class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0" alt="...">
                 </div>
 
                    
-                <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+                <div class="col-12 col-md-7 col-lg-6 order-md-1" >
                     
                     <!-- Heading -->
                     <h1 class="text-center text-md-left">
-                        <img src="images/logo.svg" alt="Cotopia" class="d-block mb-8 ml-md-0 mx-auto" />
+                       
                         Analytics for your
                         Google Calendar.
 
@@ -48,7 +91,7 @@
 
                     <!-- Text -->
                     <h3 class="lead text-center text-md-left mb-6 mt-5 mb-lg-6">
-                        See with whom you meet and how often.
+                        See with whom you meet and <br /> how often.
                     </h3>
 
                     <!-- Buttons -->
@@ -239,11 +282,12 @@
 
 
 
-    <div class="position-relative greybg py-8">
+    <div class="position-relative greybg py-11">
         <div class="container ">
             <!-- Title -->
-            <div class="col-12 col-md-7 col-lg-10  mx-md-auto  p-4 bubble">
-                <p class="lead">Our definition of "customer call": </p>
+            <div class="col-12 col-md-7 col-lg-10  mx-md-auto  p-6 bubble">
+                <img src="images/gcalendaricon.svg" alt="Cotopia" class="d-block gcalendar" />
+                <h5>Our definition of "customer call": </h5>
                 <h2 class="text-blue">A calendar event, in which one or more persons from your company participate in a session with one or more persons from another company</h2"class="text-blue">
 
             </div>
