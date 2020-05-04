@@ -1,7 +1,7 @@
 ﻿@import 'variables.less';
 @charset "utf-8";
 body {
-    font-family: "Segoe UI",Roboto,"Helvetica Neue";
+    font-family: Roboto, "Segoe UI", "Helvetica Neue";
     /*background:url(../images/headerright.svg) 100% 0 no-repeat;*/
     overflow-x: hidden;
     width: 100%;
@@ -41,7 +41,8 @@ body {
     font-weight: 400;
 }
 .btn {
-    padding: .975rem .75rem;
+    padding: 8px;
+    height:44px;
 }
 
 .btn-primary{
@@ -85,10 +86,17 @@ body {
 .text-blue{
     color:@blue;
 }
-
+.badge img{
+    width:28px;
+}
 .questions p {
     font-size: calc(1.25625rem + .075vw);
     text-align: left;
+}
+
+p {
+    font-size: calc(1.25625rem + .075vw);
+    color: @bodytext;
 }
 
 footer a{
@@ -149,6 +157,7 @@ footer a{
 .navbar-toggler .navbar-toggler-default {
     display: -ms-flexbox;
     display: flex;
+    justify-content: center;
 }
 .navbar-toggler[aria-expanded=true] .navbar-toggler-toggled {
     display: -ms-flexbox;
@@ -235,4 +244,28 @@ footer {
     margin-left: auto;
 }
                             }
-                            
+
+.gimage {
+    background: #fff;
+padding:8px;
+   
+    height: 41px;
+    width:41px;
+    position:absolute;
+    top:0px;
+    left:0px;
+    border-radius:2px;
+    
+    }
+
+.gbtn{
+    padding-left:62px;
+    text-align:left !important;
+  padding-top:8px;
+   font-weight:600;
+    position:relative;
+    border:solid 1px @blue;
+}
+.shadow-sm {
+    box-shadow: 0 .05rem .05rem rgba(0,0,0,.25) !important;
+}

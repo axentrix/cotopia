@@ -2,10 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\css",
-    "\\images",
     "\\images\\favicons",
     "\\less"
   ],
-  "SelectedNode": "\\images\\favicons",
+  "SelectedNode": "\\less\\start.less",
   "PreviewInSolutionExplorer": false
 }
